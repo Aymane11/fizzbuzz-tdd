@@ -4,4 +4,4 @@ from typing import List
 class ListFactory(ABC):
     @staticmethod
     def create_list(n: int) -> List[int]:
-        return [i for i in range(1, n + 1)]
+        return list(range(1, n + 1))
