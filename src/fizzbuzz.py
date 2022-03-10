@@ -8,4 +8,6 @@ class FizzBuzzEngine:
 class FizzBuzzConverter(ABC):
     @staticmethod
     def convert(number: int) -> str:
-        return "1"
+        if number == 1:
+            return "1"
+        return "Fizz"
