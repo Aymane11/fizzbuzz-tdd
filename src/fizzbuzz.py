@@ -10,4 +10,7 @@ class FizzBuzzConverter(ABC):
     def convert(number: int) -> str:
         if number == 1:
             return "1"
-        return "Fizz"
+        elif number == 3:
+            return "Fizz"
+        else:
+            return "Buzz"
