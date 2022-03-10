@@ -9,3 +9,6 @@ def testConvert3ShouldBeFizz():
 
 def testConvert5ShouldBeBuzz():
 	assert FizzBuzzConverter.convert(5) == "Buzz"
+
+def testConvert9ShouldBeFizzBuzz():
+	assert FizzBuzzConverter.convert(9) == "Fizz"
