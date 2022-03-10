@@ -13,3 +13,7 @@ def testRange3List():
 def testRange0List():
 	with pytest.raises(ValueError):
 		ListFactory.create_list(0)
+
+def testRangeNegativeList():
+	with pytest.raises(ValueError):
+		ListFactory.create_list(-1)
