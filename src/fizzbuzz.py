@@ -10,7 +10,7 @@ class FizzBuzzConverter(ABC):
     def convert(number: int) -> str:
         if number % 3 != 0 and number % 5 != 0:
             return str(number)
-        elif number == 15:
+        elif number % 3 == 0 and number % 5 == 0:
             return "FizzBuzz"
         elif number % 3 == 0:
             return "Fizz"
