@@ -1,8 +1,11 @@
 from abc import ABC
+from typing import List
 
 
 class FizzBuzzEngine:
-    pass
+    @staticmethod
+    def fizzbuzz(number: int) -> List[str]:
+        pass
 
 
 class FizzBuzzConverter(ABC):
