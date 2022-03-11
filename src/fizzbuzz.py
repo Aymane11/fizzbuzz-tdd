@@ -1,11 +1,15 @@
 from abc import ABC
 from typing import List
+from .utils import ListFactory
 
 
 class FizzBuzzEngine:
     @staticmethod
     def fizzbuzz(number: int) -> List[str]:
-        pass
+        return [
+            FizzBuzzConverter.convert(i)
+            for i in ListFactory.create_list(number)
+        ]
 
 
 class FizzBuzzConverter(ABC):
